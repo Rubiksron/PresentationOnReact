@@ -24,14 +24,15 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     alert(`You chose the ${this.state.size} pizza.`);
-    var x = document.getElementById()
-
   }
 
   render() {
     return (
       <div>
-        <Form size={ this.state.size } />
+        <Form size={ this.state.size }
+              onChange={ this.handleChange }
+              onSubmit={ this.handleSubmit }
+        />
       </div>
     );
   }

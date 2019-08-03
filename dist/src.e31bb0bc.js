@@ -25820,7 +25820,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./svg/icon-check.svg":[["icon-check.7937eee6.svg","sass/svg/icon-check.svg"],"sass/svg/icon-check.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25833,53 +25833,30 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Form = function Form(props) {
-  return _react.default.createElement("div", null, _react.default.createElement("h2", null, props.size));
+  return _react.default.createElement("form", {
+    onChange: props.onChange
+  }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "radio",
+    value: "small",
+    checked: props.size === "small",
+    onChange: props.handleChange
+  }), "Small")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "radio",
+    value: "medium",
+    checked: props.size === "medium",
+    onChange: props.handleChange
+  }), "Medium")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "radio",
+    value: "large",
+    checked: props.size === "large",
+    onChange: props.handleChange
+  }), "Large"))), _react.default.createElement("button", {
+    type: "submit",
+    className: "submit-button"
+  }, "Make your choice"));
 };
 
-var _default = Form; // <form onSubmit={this.handleSubmit}>
-// <p className="title">Select a pizza size:</p>
-//
-// <ul>
-// <li>
-// <label>
-// <input
-// type="radio"
-// value="small"
-// checked={this.state.size === "small"}
-// onChange={this.handleChange}
-// />
-// Small
-// </label>
-// </li>
-//
-// <li>
-// <label>
-// <input
-// type="radio"
-// value="medium"
-// checked={this.state.size === "medium"}
-// onChange={this.handleChange}
-// />
-// Medium
-// </label>
-// </li>
-//
-// <li>
-// <label>
-// <input
-// type="radio"
-// value="large"
-// checked={this.state.size === "large"}
-// onChange={this.handleChange}
-// />
-// Large
-// </label>
-// </li>
-// </ul>
-//
-// <button type="submit" className="submit-button">Make your choice</button>
-// </form>
-
+var _default = Form;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
@@ -25950,13 +25927,14 @@ function (_React$Component) {
     value: function handleSubmit(event) {
       event.preventDefault();
       alert("You chose the ".concat(this.state.size, " pizza."));
-      var x = document.getElementById();
     }
   }, {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement(_Form.default, {
-        size: this.state.size
+        size: this.state.size,
+        onChange: this.handleChange,
+        onSubmit: this.handleSubmit
       }));
     }
   }]);
@@ -26006,7 +25984,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57187" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58559" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
