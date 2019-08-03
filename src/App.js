@@ -9,6 +9,8 @@ class App extends React.Component {
 
     this.state = {
       size: 'placeholder',
+      correct: '',
+      wrong: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
