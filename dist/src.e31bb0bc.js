@@ -25908,7 +25908,9 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      size: 'placeholder'
+      size: 'placeholder',
+      correct: '',
+      wrong: ''
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
@@ -25984,7 +25986,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50214" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54710" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
