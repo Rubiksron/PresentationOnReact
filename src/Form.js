@@ -17,29 +17,29 @@ const Form = props => {
         </label>
       </li>
 
-    <li>
-      <label>
-        <input
-        type="radio"
-        value="medium"
-        checked={props.size === "medium"}
-        onChange={props.onChange}
-        />
-      Medium
-      </label>
-    </li>
+      <li>
+        <label>
+          <input
+          type="radio"
+          value="medium"
+          checked={props.size === "medium"}
+          onChange={props.onChange}
+          />
+        Medium
+        </label>
+      </li>
 
-    <li>
-      <label>
-        <input
-        type="radio"
-        value="large"
-        checked={props.size === "large"}
-        onChange={props.onChange}
-        />
-      Large
-      </label>
-    </li>
+      <li>
+        <label>
+          <input
+          type="radio"
+          value="large"
+          checked={props.size === "large"}
+          onChange={props.onChange}
+          />
+        Large
+        </label>
+      </li>
     </ul>
 
     <button type="submit" className="submit-button">Make your choice</button>

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: .25em; }
+  padding: .25em;
+  margin: .25em; }
 
 body {
   margin: 0;
@@ -16,10 +17,9 @@ label {
   background-color: lightblue;
   width: 100%; }
 
-input:checked {
-  margin-left: 25px;
-  border: 1px solid blue;
-  background-color: purple; }
+input[type=radio]:checked {
+  display: none;
+  background: purple; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
