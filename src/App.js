@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      size: 'Big',
+      size: 'placeholder',
     };
 
     this.handleChange = this.handleChange.bind(this);

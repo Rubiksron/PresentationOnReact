@@ -3,7 +3,7 @@ import React from 'react';
 
 const Form = props => {
   return (
-    <form onChange={props.onChange}>
+    <form onSubmit={props.onSubmit}>
     <ul>
       <li>
         <label>
@@ -11,7 +11,7 @@ const Form = props => {
           type="radio"
           value="small"
           checked={props.size === "small"}
-          onChange={props.handleChange}
+          onChange={props.onChange}
           />
         Small
         </label>
@@ -23,7 +23,7 @@ const Form = props => {
         type="radio"
         value="medium"
         checked={props.size === "medium"}
-        onChange={props.handleChange}
+        onChange={props.onChange}
         />
       Medium
       </label>
@@ -35,7 +35,7 @@ const Form = props => {
         type="radio"
         value="large"
         checked={props.size === "large"}
-        onChange={props.handleChange}
+        onChange={props.onChange}
         />
       Large
       </label>

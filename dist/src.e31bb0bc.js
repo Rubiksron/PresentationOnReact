@@ -25834,22 +25834,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Form = function Form(props) {
   return _react.default.createElement("form", {
-    onChange: props.onChange
+    onSubmit: props.onSubmit
   }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
     type: "radio",
     value: "small",
     checked: props.size === "small",
-    onChange: props.handleChange
+    onChange: props.onChange
   }), "Small")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
     type: "radio",
     value: "medium",
     checked: props.size === "medium",
-    onChange: props.handleChange
+    onChange: props.onChange
   }), "Medium")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
     type: "radio",
     value: "large",
     checked: props.size === "large",
-    onChange: props.handleChange
+    onChange: props.onChange
   }), "Large"))), _react.default.createElement("button", {
     type: "submit",
     className: "submit-button"
@@ -25908,7 +25908,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      size: 'Big'
+      size: 'placeholder'
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
@@ -25984,7 +25984,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58559" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50214" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
