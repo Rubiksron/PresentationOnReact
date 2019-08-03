@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   padding: .25em;
+  margin: .25em;
 }
 
 body {
@@ -20,11 +21,11 @@ label {
   width: 100%;
 }
 
-input:checked {
-  margin-left: 25px;
-  border: 1px solid blue;
-  background-color: purple;
+input[type=radio]:checked {
+ display: none;
+ background: purple;
 }
+
 // input[type=checkbox] + label {
 //   color: #ccc;
 //   font-style: italic;
