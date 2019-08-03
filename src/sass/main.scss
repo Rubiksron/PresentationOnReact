@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  padding: .25em;
 }
 
 body {
@@ -11,4 +12,24 @@ body {
 
 li {
   list-style-type: none;
+  background-color: red;
 }
+
+label {
+  background-color: lightblue;
+  width: 100%;
+}
+
+input:checked {
+  margin-left: 25px;
+  border: 1px solid blue;
+  background-color: purple;
+}
+// input[type=checkbox] + label {
+//   color: #ccc;
+//   font-style: italic;
+// }
+// input[type=checkbox]:checked + label {
+//   color: #f00;
+//   font-style: normal;
+// }
