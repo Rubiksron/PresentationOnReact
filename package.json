@@ -17,10 +17,13 @@
   "dependencies": {
     "express": "^4.16.4",
     "gh-pages": "^2.0.1",
+    "install": "^0.13.0",
+    "npm": "^6.10.2",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-radio-group": "^3.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
