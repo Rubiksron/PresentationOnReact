@@ -8,9 +8,7 @@ class App extends React.Component {
     super(props)
 
     this.state = {
-      size: 'placeholder',
-      correct: '',
-      wrong: ''
+      size: 'placeholder'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,7 +23,7 @@ class App extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert(`You chose the ${this.state.size} pizza.`);
+    alert(`You chose the ${this.state.size} shirt.`);
   }
 
   render() {

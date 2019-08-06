@@ -25835,14 +25835,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react.default.createElement("form", {
     onSubmit: props.onSubmit
-  }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, "Shirt Size:", _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-small",
     type: "radio",
     value: "small",
     checked: props.size === "small",
     onChange: props.onChange
   }), _react.default.createElement("label", {
-    for: "input-id-small"
+    htmlFor: "input-id-small"
   }, "Small")), _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-medium",
     type: "radio",
@@ -25850,7 +25850,7 @@ var Form = function Form(props) {
     checked: props.size === "medium",
     onChange: props.onChange
   }), _react.default.createElement("label", {
-    for: "input-id-medium"
+    htmlFor: "input-id-medium"
   }, "Medium")), _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-large",
     type: "radio",
@@ -25858,10 +25858,9 @@ var Form = function Form(props) {
     checked: props.size === "large",
     onChange: props.onChange
   }), _react.default.createElement("label", {
-    for: "input-id-large"
+    htmlFor: "input-id-large"
   }, "Large"))), _react.default.createElement("button", {
-    type: "submit",
-    className: "submit-button"
+    type: "submit"
   }, "Make your choice"));
 };
 
@@ -25917,9 +25916,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      size: 'placeholder',
-      correct: '',
-      wrong: ''
+      size: 'placeholder'
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
@@ -25937,7 +25934,7 @@ function (_React$Component) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      alert("You chose the ".concat(this.state.size, " pizza."));
+      alert("You chose the ".concat(this.state.size, " shirt."));
     }
   }, {
     key: "render",
@@ -25995,7 +25992,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61322" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62292" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
