@@ -25835,22 +25835,31 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react.default.createElement("form", {
     onSubmit: props.onSubmit
-  }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+  }, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
+    id: "input-id-small",
     type: "radio",
     value: "small",
     checked: props.size === "small",
     onChange: props.onChange
-  }), "Small")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+  }), _react.default.createElement("label", {
+    for: "input-id-small"
+  }, "Small")), _react.default.createElement("li", null, _react.default.createElement("input", {
+    id: "input-id-medium",
     type: "radio",
     value: "medium",
     checked: props.size === "medium",
     onChange: props.onChange
-  }), "Medium")), _react.default.createElement("li", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+  }), _react.default.createElement("label", {
+    for: "input-id-medium"
+  }, "Medium")), _react.default.createElement("li", null, _react.default.createElement("input", {
+    id: "input-id-large",
     type: "radio",
     value: "large",
     checked: props.size === "large",
     onChange: props.onChange
-  }), "Large"))), _react.default.createElement("button", {
+  }), _react.default.createElement("label", {
+    for: "input-id-large"
+  }, "Large"))), _react.default.createElement("button", {
     type: "submit",
     className: "submit-button"
   }, "Make your choice"));
@@ -25986,7 +25995,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53203" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61322" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

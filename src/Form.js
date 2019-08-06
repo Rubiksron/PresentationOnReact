@@ -6,37 +6,40 @@ const Form = props => {
     <form onSubmit={props.onSubmit}>
     <ul>
       <li>
-        <label>
-          <input
-          type="radio"
-          value="small"
-          checked={props.size === "small"}
-          onChange={props.onChange}
-          />
+        <input
+        id="input-id-small"
+        type="radio"
+        value="small"
+        checked={props.size === "small"}
+        onChange={props.onChange}
+        />
+        <label for="input-id-small">
         Small
         </label>
       </li>
 
       <li>
-        <label>
-          <input
-          type="radio"
-          value="medium"
-          checked={props.size === "medium"}
-          onChange={props.onChange}
-          />
+        <input
+        id="input-id-medium"
+        type="radio"
+        value="medium"
+        checked={props.size === "medium"}
+        onChange={props.onChange}
+        />
+        <label for="input-id-medium">
         Medium
         </label>
       </li>
 
       <li>
-        <label>
-          <input
-          type="radio"
-          value="large"
-          checked={props.size === "large"}
-          onChange={props.onChange}
-          />
+        <input
+        id="input-id-large"
+        type="radio"
+        value="large"
+        checked={props.size === "large"}
+        onChange={props.onChange}
+        />
+        <label for="input-id-large">
         Large
         </label>
       </li>
