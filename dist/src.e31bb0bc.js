@@ -25835,7 +25835,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react.default.createElement("form", {
     onSubmit: props.onSubmit
-  }, "Shirt Size:", _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, "Pizza Size:", _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-small",
     type: "radio",
     value: "small",
@@ -25861,7 +25861,7 @@ var Form = function Form(props) {
     htmlFor: "input-id-large"
   }, "Large"))), _react.default.createElement("button", {
     type: "submit"
-  }, "Make your choice"));
+  }, "Place Order"));
 };
 
 var _default = Form;
@@ -25934,7 +25934,7 @@ function (_React$Component) {
     key: "handleSubmit",
     value: function handleSubmit(event) {
       event.preventDefault();
-      alert("You chose the ".concat(this.state.size, " shirt."));
+      alert("You chose the ".concat(this.state.size, " pizza."));
     }
   }, {
     key: "render",
@@ -25992,7 +25992,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65263" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60033" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

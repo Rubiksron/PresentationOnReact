@@ -4,7 +4,7 @@ import React from 'react';
 const Form = props => {
   return (
     <form onSubmit={props.onSubmit}>
-    Shirt Size:
+    Pizza Size:
     <ul>
       <li>
         <input
@@ -46,7 +46,7 @@ const Form = props => {
       </li>
     </ul>
 
-    <button type="submit">Make your choice</button>
+    <button type="submit">Place Order</button>
     </form>
   );
 };
