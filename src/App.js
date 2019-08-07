@@ -23,7 +23,7 @@ class App extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert(`You chose the ${this.state.size} shirt.`);
+    alert(`You chose the ${this.state.size} pizza.`);
   }
 
   render() {
