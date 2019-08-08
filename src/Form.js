@@ -46,7 +46,7 @@ const Form = props => {
       </li>
     </ul>
 
-    <button type="submit">Place Order</button>
+    <button type="submit">Order Pizza</button>
     </form>
   );
 };
