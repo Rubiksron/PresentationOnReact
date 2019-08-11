@@ -25820,7 +25820,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./svg/radio.png":[["radio.0da9d5ba.png","sass/svg/radio.png"],"sass/svg/radio.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25835,7 +25835,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react.default.createElement("form", {
     onSubmit: props.onSubmit
-  }, "Pizza Size:", _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, _react.default.createElement("h3", null, "Pizza Size:"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-small",
     type: "radio",
     value: "small",
@@ -25992,7 +25992,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65086" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61891" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
