@@ -4,7 +4,7 @@ import React from 'react';
 const Form = props => {
   return (
     <form onSubmit={props.onSubmit}>
-    Pizza Size:
+    <h3>Pizza Size:</h3>
     <ul>
       <li>
         <input
