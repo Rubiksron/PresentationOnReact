@@ -25820,7 +25820,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
+},{"./svg/pizza-background-image.jpg":[["pizza-background-image.2d882e36.jpg","sass/svg/pizza-background-image.jpg"],"sass/svg/pizza-background-image.jpg"],"./svg/label-button-sized.png":[["label-button-sized.3b063d5f.png","sass/svg/label-button-sized.png"],"sass/svg/label-button-sized.png"],"./svg/checkmark.png":[["checkmark.405348b7.png","sass/svg/checkmark.png"],"sass/svg/checkmark.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Form.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25835,7 +25835,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Form = function Form(props) {
   return _react.default.createElement("form", {
     onSubmit: props.onSubmit
-  }, _react.default.createElement("h3", null, "Pizza Size:"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, _react.default.createElement("h1", null, "Pizza Size :"), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-small",
     type: "radio",
     value: "small",
@@ -25843,7 +25843,7 @@ var Form = function Form(props) {
     onChange: props.onChange
   }), _react.default.createElement("label", {
     htmlFor: "input-id-small"
-  }, "Small")), _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, "-Small-")), _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-medium",
     type: "radio",
     value: "medium",
@@ -25851,7 +25851,7 @@ var Form = function Form(props) {
     onChange: props.onChange
   }), _react.default.createElement("label", {
     htmlFor: "input-id-medium"
-  }, "Medium")), _react.default.createElement("li", null, _react.default.createElement("input", {
+  }, "-Medium-")), _react.default.createElement("li", null, _react.default.createElement("input", {
     id: "input-id-large",
     type: "radio",
     value: "large",
@@ -25859,7 +25859,7 @@ var Form = function Form(props) {
     onChange: props.onChange
   }), _react.default.createElement("label", {
     htmlFor: "input-id-large"
-  }, "Large"))), _react.default.createElement("button", {
+  }, "-Large-"))), _react.default.createElement("button", {
     type: "submit"
   }, "Order Pizza"));
 };
@@ -25992,7 +25992,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61891" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55763" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

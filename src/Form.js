@@ -4,7 +4,7 @@ import React from 'react';
 const Form = props => {
   return (
     <form onSubmit={props.onSubmit}>
-    <h3>Pizza Size:</h3>
+    <h1>Pizza Size :</h1>
     <ul>
       <li>
         <input
@@ -15,7 +15,7 @@ const Form = props => {
           onChange={props.onChange}
         />
         <label htmlFor="input-id-small">
-          Small
+          -Small-
         </label>
       </li>
 
@@ -28,7 +28,7 @@ const Form = props => {
           onChange={props.onChange}
         />
         <label htmlFor="input-id-medium">
-          Medium
+          -Medium-
         </label>
       </li>
 
@@ -41,7 +41,7 @@ const Form = props => {
           onChange={props.onChange}
         />
         <label htmlFor="input-id-large">
-          Large
+          -Large-
         </label>
       </li>
     </ul>
