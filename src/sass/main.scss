@@ -8,45 +8,53 @@ body {
   margin: 0;
   padding: 5%;
   font-family: sans-serif;
-  background-color: lightgrey;
-  // background-image: url("./svg/pizza-wallpaper.jpg");
+}
+
+html {
+  background-size: cover;
+  height: 100%;
+  background: url("./svg/pizza-background-image.jpg") left top no-repeat;
+  background-size: cover;
 }
 
 li:hover {
-  // background-color: lightblue;
-  // border-radius: .5em;
+  background-color: #FFE39C;
+  border-radius: .5em;
 }
 
 form {
-  // background: linear-gradient(#D9B559, #F5D37E, #FFE39C);
-  // border: 1px solid grey;
-  // box-shadow: .5em .5em .5em grey;
-  // width: 10em;
-  // padding: 1em;
-  // margin-left: 10em;
-  // border-radius: .5em;
+  background: linear-gradient(#D9B559, #F5D37E, #FFE39C);
+  font-family: fantasy;
+  border: .2em double #42371B;
+  box-shadow: 1em 1em 1em #42371B;
+  width: 15em;
+  text-align: center;
+  padding: 1em;
+  margin-left: 2em;
+  border-radius: .5em;
 }
 
 li {
-  // list-style-type: none;
+  list-style-type: none;
 }
 
 input[type=radio] {
-	// display: none;
+	display: none;
   // width: 50px;
   // height: 50px;
   // background-color: red;
 }
 
 label {
-  // background: url('./svg/label-button-sized.png') left top no-repeat;
-	// display: block;
-	// min-height: 25px;
-	// padding-left: 35px;
+  background: url('./svg/label-button-sized.png') left top no-repeat;
+	display: block;
+	min-height: 1.5em;
+	padding-left: .5em;
+  font-size: Large;
 }
 //can use ~ below too
 input[type=radio]:checked + label {
-  // background: url('./svg/checkmark.png') top left no-repeat;
+  background: url('./svg/checkmark.png') top left no-repeat;
   // background: url('./svg/radio.png') top left no-repeat;
   // background: url('./svg/raspberry.png') top left no-repeat;
   // background: url('./svg/orange.png') top left no-repeat;
@@ -54,10 +62,12 @@ input[type=radio]:checked + label {
   // background: url('./svg/sadFace.png') top left no-repeat;
   // background: url('./svg/football.png') top left no-repeat;
   // background: url('./svg/basketball.png') top left no-repeat;
-  // background: url('./svg/small-brook.png') top left no-repeat;
+  // background: url('./svg/round-brook.png') top left no-repeat;
 }
 
 button {
   border-radius: .5em;
   padding: .5em;
+  font-family: fantasy;
+  font-weight: bold;
 }
